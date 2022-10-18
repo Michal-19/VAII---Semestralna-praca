@@ -1,0 +1,114 @@
+/** {
+    box-sizing: border-box;
+}*/
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body { position: absolute; }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    position: relative;
+    background-image: url(pozadie.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+form {
+    position: absolute !important;
+    width: 25% !important;
+    height: auto !important;
+    transform: translate(-50%, -50%) !important;
+    left: 50% !important;
+    margin-top: 25% !important;
+}
+
+.form-label {
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.3vw;
+}
+
+.form-control {
+    background: transparent !important;
+    border: 3px white solid !important;
+    border-radius: 20px !important;
+    margin-bottom: .5em;
+}
+
+.form-control:hover {
+    background-color: white !important;
+}
+
+button {
+    background: transparent !important;
+    border: 3px solid white;
+    border-radius: 20px !important;
+    width: 100% !important;
+    height: auto !important;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-group {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.login:hover {
+    background-color: blue !important;
+}
+
+.register:hover {
+    background-color: chartreuse !important;
+}
+
+.link-na-uvod {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    form, body {
+        width: 100% !important;
+        height: auto !important;
+        transform: translate(-50%, -50%) !important;
+        position: absolute !important;
+        left: 50% !important;
+        margin-top: 25% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-label {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nazov {
+        margin-top: 10%;
+    }
+}
+
+.nazov {
+    position: absolute;
+    width: 100%;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 10%;
+    color: white;
+    font-family: cursive;
+}
+
